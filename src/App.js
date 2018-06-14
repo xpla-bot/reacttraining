@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Product from './Product';
 
 class App extends Component {
   render() {
@@ -30,61 +31,11 @@ class App extends Component {
 
   renderContent() {
     return <section className="App-content">
-      <article className="App-product">
-        <h3>Item name</h3>
-        <p>
-          Curabitur ut tellus commodo, pretium enim quis, faucibus dui. Suspendisse consequat, leo a imperdiet
-          sollicitudin, odio purus faucibus tortor, id venenatis risus neque vel lacus. Pellentesque quis eros ac mi
-          auctor porta. Proin vitae sagittis diam. Nunc nec mi et ante feugiat consequat. Morbi sit amet dictum
-          augue, ac gravida justo. Morbi scelerisque consectetur lacus vitae fermentum.
-        </p>
-        <div>Price: $35</div>
-        <button type="button">Add to cart</button>
-      </article>
-      <article className="App-product">
-        <h3>Item name</h3>
-        <p>
-          Curabitur ut tellus commodo, pretium enim quis, faucibus dui. Suspendisse consequat, leo a imperdiet
-          sollicitudin, odio purus faucibus tortor, id venenatis risus neque vel lacus. Pellentesque quis eros ac mi
-          auctor porta. Proin vitae sagittis diam. Nunc nec mi et ante feugiat consequat. Morbi sit amet dictum
-          augue, ac gravida justo. Morbi scelerisque consectetur lacus vitae fermentum.
-        </p>
-        <div>Price: $35</div>
-        <button type="button">Add to cart</button>
-      </article>
-      <article className="App-product">
-        <h3>Item name</h3>
-        <p>
-          Curabitur ut tellus commodo, pretium enim quis, faucibus dui. Suspendisse consequat, leo a imperdiet
-          sollicitudin, odio purus faucibus tortor, id venenatis risus neque vel lacus. Pellentesque quis eros ac mi
-          auctor porta. Proin vitae sagittis diam. Nunc nec mi et ante feugiat consequat. Morbi sit amet dictum
-          augue, ac gravida justo. Morbi scelerisque consectetur lacus vitae fermentum.
-        </p>
-        <div>Price: $35</div>
-        <button type="button">Add to cart</button>
-      </article>
-      <article className="App-product">
-        <h3>Item name</h3>
-        <p>
-          Curabitur ut tellus commodo, pretium enim quis, faucibus dui. Suspendisse consequat, leo a imperdiet
-          sollicitudin, odio purus faucibus tortor, id venenatis risus neque vel lacus. Pellentesque quis eros ac mi
-          auctor porta. Proin vitae sagittis diam. Nunc nec mi et ante feugiat consequat. Morbi sit amet dictum
-          augue, ac gravida justo. Morbi scelerisque consectetur lacus vitae fermentum.
-        </p>
-        <div>Price: $35</div>
-        <button type="button">Add to cart</button>
-      </article>
-      <article className="App-product">
-        <h3>Item name</h3>
-        <p>
-          Curabitur ut tellus commodo, pretium enim quis, faucibus dui. Suspendisse consequat, leo a imperdiet
-          sollicitudin, odio purus faucibus tortor, id venenatis risus neque vel lacus. Pellentesque quis eros ac mi
-          auctor porta. Proin vitae sagittis diam. Nunc nec mi et ante feugiat consequat. Morbi sit amet dictum
-          augue, ac gravida justo. Morbi scelerisque consectetur lacus vitae fermentum.
-        </p>
-        <div>Price: $35</div>
-        <button type="button">Add to cart</button>
-      </article>
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
     </section>;
   }
 }
