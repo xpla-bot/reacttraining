@@ -30,12 +30,17 @@ class App extends Component {
   }
 
   renderContent() {
+    const description =
+      `Curabitur ut tellus commodo, pretium enim quis, faucibus dui. Suspendisse consequat, leo a imperdiet
+          sollicitudin, odio purus faucibus tortor, id venenatis risus neque vel lacus. Pellentesque quis eros ac mi
+          auctor porta. Proin vitae sagittis diam. Nunc nec mi et ante feugiat consequat. Morbi sit amet dictum
+          augue, ac gravida justo. Morbi scelerisque consectetur lacus vitae fermentum.`;
     return <section className="App-content">
-      <Product />
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+      <Product title="Item No 1" price="50" description={description}/>
+      <Product title="Item No 2" price="30" description={description}/>
+      <Product title="Item No 3" price="20" description={description}/>
+      <Product title="Item No 4" price="20" description={description}/>
+      <Product title="Item No 5" price="20" description={description}/>
     </section>;
   }
 }
