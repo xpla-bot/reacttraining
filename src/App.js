@@ -9,28 +9,23 @@ class App extends Component {
     currentPage: 'store'
   };
 
-  onStoreClick = () => this.setState({currentPage: 'store'});
-  onNewsClick = () => this.setState({currentPage: 'news'});
-  on404Click = () => this.setState({currentPage: ''});
+  handleRedirect = url => this.setState({currentPage: url});
 
   render() {
     const titleText = 'Awesome React Store';
     const paragraphText = 'Here is some text';
     return (
       <div className="App">
-        <Header/>
+        <Header onRedirect={this.handleRedirect}/>
         <h1 className="App-title">{titleText}</h1>
         <p className="App-intro">{paragraphText}</p>
-        {<button type="button" onClick={this.onStoreClick}>Go to store</button>}
-        {<button type="button" onClick={this.onNewsClick}>Go to news</button>}
-        {<button type="button" onClick={this.on404Click}>Go to 404</button>}
         {this.renderContent()}
       </div>
     );
   }
 
   renderContent() {
-    if(this.state.currentPage === 'store') {
+    if (this.state.currentPage === 'store') {
       const description =
         `Curabitur ut tellus commodo, pretium enim quis, faucibus dui. Suspendisse consequat, leo a imperdiet
           sollicitudin, odio purus faucibus tortor, id venenatis risus neque vel lacus. Pellentesque quis eros ac mi
@@ -44,7 +39,7 @@ class App extends Component {
         <Product title="Item No 5" price="20" description={description}/>
       </section>;
     }
-    if(this.state.currentPage === 'news') {
+    if (this.state.currentPage === 'news') {
       return <h1>News page</h1>;
     }
     return <div>Sorry, page is not found</div>;
