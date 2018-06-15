@@ -9,6 +9,10 @@ class App extends Component {
     currentPage: 'store'
   };
 
+  onStoreClick = () => this.setState({currentPage: 'store'});
+  onNewsClick = () => this.setState({currentPage: 'news'});
+  on404Click = () => this.setState({currentPage: ''});
+
   render() {
     const titleText = 'Awesome React Store';
     const paragraphText = 'Here is some text';
@@ -17,9 +21,9 @@ class App extends Component {
         <Header/>
         <h1 className="App-title">{titleText}</h1>
         <p className="App-intro">{paragraphText}</p>
-        {<button type="button" onClick={() => this.setState({currentPage: 'store'})}>Go to store</button>}
-        {<button type="button" onClick={() => this.setState({currentPage: 'news'})}>Go to news</button>}
-        {<button type="button" onClick={() => this.setState({currentPage: ''})}>Go to 404</button>}
+        {<button type="button" onClick={this.onStoreClick}>Go to store</button>}
+        {<button type="button" onClick={this.onNewsClick}>Go to news</button>}
+        {<button type="button" onClick={this.on404Click}>Go to 404</button>}
         {this.renderContent()}
       </div>
     );
