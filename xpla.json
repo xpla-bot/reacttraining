@@ -1,0 +1,21 @@
+{
+  "xpla.version": 0,
+  "name": "React",
+  "author": {
+    "name": "Stanislav Lesiuk",
+    "link": "@stas-lesiuk"
+  },
+  "branches": [
+    {
+      "name": "test-1-basic",
+      "title": "Basic"
+    },
+    {
+      "name": "test-2-props",
+      "title": "React props"
+    },
+    {
+      "name": "test-3-state-and-router",
+      "title": "State & Router"
+    }
+  ]
